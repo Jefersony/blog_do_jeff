@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>#{get 'title' /}</title>
+        <meta charset="${_response_encoding}">
+        <!-- Insere Bootstrap Dist -->
+        <link rel="stylesheet" media="screen" href="@{'/public/bootstrap-3.3.4-dist/css/bootstrap.css'}">
+        <!-- Insere os outros estilos da pagina -->
+        <link rel="stylesheet" media="screen" href="@{'/public/stylesheets/main.css'}">
+        <!-- #{get 'moreStyles' /}  -->
+        <link rel="shortcut icon" type="image/png" href="@{'/public/images/favicon.png'}">
+    </head>
+    
+    <body>
+    <h1>Blog do Jeff</h1>
+        <div id="menus">
+            <ul>
+                <li><a href="@{Application.index}">Home</a></li>
+                <li><a href="@{Application.outra}">Postagens</a></li>
+                <li><a href="@{Application.imagens}">Imagens</a></li>
+            </ul>
+        </div>
+    
+    <div id="comentarios">
+        <strong>Comentarios:</strong>
+        <ul id="lista-comentarios">
+            <li>comentario de teste| Autor: Fulano</li>
+        </ul>
+        Novo comentario:<br>
+        <textarea id="novo-comentario"></textarea>
+        <br>
+        Autor:
+        <input id="autor-comentario"/>
+        <br><br>
+        <button class="btn" id="inserir-comentario">Inserir</button>
+    </div>
+    
+    <div>
+        <table border="0" cellspacing="0">
+    
+            <tr>
+                <td id="tb-menus"></td>
+                <td id="tb-conteudo"></td>
+                <td align="center" id="tb-span"></td>
+            </tr>
+            <tr>
+                <td id="tb-abaixo-menus"></td>
+                <td id="tb-comentarios"></td>
+                <td ></td>
+            </tr>
+        </table>
+    </div>
+        
+        
+        
+        <script src="@{'/public/javascripts/jquery-1.6.4.min.js'}" type="text/javascript" charset="${_response_encoding}"></script>
+        <script src="@{'/public/javascripts/main.js'}" type="text/javascript" charset="${_response_encoding}"></script>
+        <div>
+        #{doLayout /}
+        </div>
+        
+        #{get 'moreScripts' /}
+    </body>
+</html>

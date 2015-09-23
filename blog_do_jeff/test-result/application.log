@@ -1,0 +1,5 @@
+23 Set 2015 00:03:21,787 INFO  ~ Starting C:\Play\Projetos\blog_do_jeff
+23 Set 2015 00:03:22,990 WARN  ~ You're running Play! in DEV mode
+23 Set 2015 00:03:23,100 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+23 Set 2015 00:03:37,075 INFO  ~ Connected to jdbc:h2:mem:play;MODE=MYSQL;LOCK_MODE=0 for default
+23 Set 2015 00:03:38,270 INFO  ~ Application 'blog_do_jeff' is now started !

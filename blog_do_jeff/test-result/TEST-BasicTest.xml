@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<testsuite failures="0" time="0.028" errors="0" skipped="0" tests="3" name="BasicTest">
+  <testcase classname="BasicTest" name="aVeryImportantThingToTest" time="0.004">
+      </testcase>
+  <testcase classname="BasicTest" name="carregaArquivoYml" time="0.018">
+      </testcase>
+  <testcase classname="BasicTest" name="CriaERecuperaUmTexto" time="0.006">
+      </testcase>
+</testsuite>

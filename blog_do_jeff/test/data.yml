@@ -1,0 +1,21 @@
+# you describe your data using the YAML notation here
+# and then load them using Fixtures.load("data.yml")
+
+# User(bob):
+#   email: bob@gmail.com
+#   password: secret
+#   fullname: Bob
+
+Texto(postagem1):
+    titulo:     REM
+    conteudo:   R.E.M. foi uma banda de rock norte-americana formada em Athens, 
+                Geórgia, em 1980, pelo vocalista Michael Stipe, guitarrista Peter Buck, 
+                baixista Mike Mills e pelo baterista Bill Berry.
+    autor:      Jorge
+
+Texto(postagem2):
+    titulo:     Cranberries
+    conteudo:   The Cranberries é uma banda de rock formada em Limerick, Irlanda, em 1989.
+                A banda é formada pela vocalista Dolores O'Riordan, o guitarrista Noel Hogan, 
+                o baixista Mike Hogan e o baterista Fergal Lawler.
+    autor:      Jeremy	

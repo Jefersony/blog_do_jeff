@@ -1,0 +1,34 @@
+#{extends 'main.html' /}
+#{set title:'Outra Pg' /}
+
+#{form @Application.postaTexto()}
+<div id="novo-post">
+    <div align="center"><strong>Nova Postagem</strong></div>
+    <br>
+    Titulo:
+    <input id="novo-titulo" name="novo-titulo"><br><br>
+    Texto:<br>
+    <textarea id="txt-novo-post" name="txt-novo-post"></textarea>
+    <br>
+    Autor:
+    <input id="autor" name="autor">
+    <br><br>
+    <button class="btn" id="btn-novo-post">Inserir</button>
+</div>
+#{/form}
+<div id="conteudo">
+    <div align="center"><strong>Postagens</strong></div>
+    <p> No início da carreira, começou com uma sonoridade não muito distante dos grupos que
+        dominavam a cena britânica da época, misturando o rock psicódelico e dançante do
+        Stone Roses e outros da era Madchester, com as guitarras e a introspecção de bandas
+        como o My Bloody Valentine, que fazia o estilo "shoegazer".
+        Com o andamento de sua carreira, o Blur desenvolveu o seu próprio estilo, resgatando
+        elementos da música britânica, inspirado por, entre outros[1] , The Kinks, Beatles e
+        The Specials. Bandas como Pavement e Pixies também apresentam traços na música do Blur.
+    </p>
+	</div>
+</div>
+
+<script src="@{'/public/javascripts/jquery-1.6.4.min.js'}" type="text/javascript" charset="${_response_encoding}"></script>
+<script src="@{'/public/javascripts/outra-pg.js'}" type="text/javascript" charset="${_response_encoding}"></script>
+
